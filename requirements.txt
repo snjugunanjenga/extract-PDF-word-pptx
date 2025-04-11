@@ -1,1 +1,18 @@
  
+pdfminer.six 
+
+python-docx 
+
+python-pptx 
+
+Pillow 
+
+nltk 
+
+pandas 
+
+
+
+
+
+
