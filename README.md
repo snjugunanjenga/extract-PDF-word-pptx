@@ -1,4 +1,4 @@
-. 
+ 
 ### PDF Extraction & Deep Learning Lecture Presentation Generator
 ## Overview
 This project provides an automated pipeline for two main processes:
@@ -58,45 +58,43 @@ Generates a PowerPoint (.pptx) file with visually appealing slides suitable for 
 
 ## Installation
 Requirements
-Python Version: Python 3.8 or higher
+    Python Version: Python 3.8 or higher
 
-Dependencies:
+    Dependencies:
 
-pdfminer.six (for PDF parsing)
+    pdfminer.six (for PDF parsing)
 
-python-docx (for DOCX file generation)
+    python-docx (for DOCX file generation)
 
-python-pptx (for PPTX file creation)
+    python-pptx (for PPTX file creation)
 
-Pillow (for image processing)
+    Pillow (for image processing)
 
-nltk (for natural language processing and summarization)
+    nltk (for natural language processing and summarization)
 
-pandas (for handling table data)
+    pandas (for handling table data)
 
 Installing Dependencies
 Clone the repository and install the required packages using pip:
 
 bash
 '''
-    Copy
-    Edit
-    git clone https://github.com/snjugunanjenga/extract-PDF-word-pptx.git
-    cd your-project
-    pip install -r requirements.txt
+    
+        git clone https://github.com/snjugunanjenga/extract-PDF-word-pptx.git
+        cd your-project
+        pip install -r requirements.txt
 ## Project Structure
 graphql
 ''' 
-Copy
-Edit
-your-project/
-├── extract_pdf.py             # Script to extract text, images, tables from PDF and output DOCX
-├── generate_lecture.py        # Script to generate a summarized 10-minute lecture and PPTX presentation
-├── requirements.txt           # List of required Python packages
-├── README.md                  # This file
-├── data/                      # Folder containing sample input PDF files and generated DOCX/PPTX samples
-├── utils/                     # Utility scripts and helper modules (e.g., for text summarization, file formatting)
-└── docs/                      # Additional project documentation and design diagrams
+    
+    your-project/
+    ├── extract_pdf.py             # Script to extract text, images, tables from PDF and output DOCX
+    ├── generate_lecture.py        # Script to generate a summarized 10-minute lecture and PPTX presentation
+    ├── requirements.txt           # List of required Python packages
+    ├── README.md                  # This file
+    ├── data/                      # Folder containing sample input PDF files and generated DOCX/PPTX samples
+    ├── utils/                     # Utility scripts and helper modules (e.g., for text summarization, file formatting)
+    └── docs/                      # Additional project documentation and design diagrams
 
 ## How It Works
 1. PDF Extraction to DOCX Conversion
@@ -154,8 +152,6 @@ Run the following command to extract content from a PDF and generate a DOCX file
 bash
 ''' 
 
-    Copy
-    Edit
     python extract_pdf.py --input path/to/input.pdf --output path/to/output.docx
 
 # Step 2: Generating a Lecture Presentation
@@ -163,8 +159,7 @@ After creating the DOCX file, run the summarization and PPTX generation script:
 
 bash
 '''
-    Copy
-    Edit
+    
     python generate_lecture.py --input path/to/output.docx --topic "Deep Learning" --output path/to/lecture.pptx
 # Command-Line Arguments
 --input: Path to the input file (PDF for extraction, DOCX for lecture generation).
